@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" 
+                    src="{% static 'img/profile.png' %}"
+                     alt="Profile Picture" />
+            
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index' %}">Acerca</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'educacion' %}">Educacion</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'habilidades' %}">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'proyectos' %}">Proyectos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Proyectos</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Proyecto 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="{% static 'img/project1.jpg' %}" class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Onlyflans</h5>
+                                <p class="card-text">OnlyFlans es un proyecto e-commerce orientada a la venta de postres la cual ofrece una carta especial a los usuarios registrados dentro de esta, además esta cuenta con un formulario de contacto mediante el cual mantener la comunicación entre los clientes y el personal tras esta PYME.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/tuusuario/proyecto1" class="btn btn-primary btn-sm" target="_blank">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="https://demo-proyecto1.com" class="btn btn-secondary btn-sm" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="{% static 'img/project2.jpg' %}" class="card-img-top" alt="Proyecto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Centro inmobiliario</h5>
+                                <p class="card-text">Centro inmobiliario es una aplicación web donde usuarios pueden revisar inmuebles disponibles para el arriendo o crear y editar dichos inmuebles dependiendo del grupo de usuarios al que pertenezcan. 
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/tuusuario/proyecto2" class="btn btn-primary btn-sm" target="_blank">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="https://demo-proyecto2.com" class="btn btn-secondary btn-sm" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega más proyectos siguiendo este formato -->
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
